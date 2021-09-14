@@ -1,0 +1,161 @@
+<meta>
+    <script src="c_createObject.lua" type="client"/>
+    <script src="s_cleanup.lua" type="server" />
+    <script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="mapEditorScriptingExtension_c.lua" type="client"></script>
+
+
+<!-- Fixes, etc. -->
+	<map src="fixes/stuntfix.map" dimension="0"></map>
+	<map src="fixes/missingwall_fix.map" dimension="0"></map>
+	<map src="fixes/casper-wallace-project.map" dimension="0"></map>
+   	<map src="fixes/kingis-exterior-fix-alptraum.map" dimension="0"></map>
+	<map src="fixes/BRIDGE-MAP-FIX.map" dimension="0"></map>
+	<map src="fixes/tokyotownflckz.map" dimension="0"></map>
+   	<script src="fixes/swimmingPools.lua" type="client"/>
+
+   	<script src="fixes/oci-office/c_oci_office.lua" type="client"/>
+	<file src="fixes/oci-office/office.col"/>
+	<file src="fixes/oci-office/office2.col"/>
+
+<!-- PUBLIC (OFFICIAL) AREAS -->
+	<map src="public/tolls.map" dimension="0"></map>
+	<map src="public/Ext-GasStations/Market-Gas-Station2.map" dimension="0"></map>
+	<map src="public/Ext-GasStations/Rodeo-Gas-Station.map" dimension="0"></map>
+	<map src="public/Ext-HousingProject/Studios-Additional.map" dimension="0"></map>
+	<map src="public/Ext-HousingProject/Studios-Extras.map" dimension="0"></map>
+	<map src="public/Ext-Sicily/Sicily.map" dimension="0"></map>
+	<map src="public/Ext-Hilltopfarm/Hilltopfarm.map" dimension="0"></map>
+	<map src="public/Ext-saints_blvd/saints_blvd.map" dimension="0"></map>
+	<map src="public/Ext-saints_blvd/STLAWERENCE_FENCES.map" dimension="0"></map>
+	<map src="public/Ext-CleaningC/CleaningC.map" dimension="0"></map>
+	<map src="public/Ext-GrooveStreetRemake/rp-highills1.map" dimension="0"></map>
+	<map src="public/Ext-WillowfieldTrailerPark/Willowfield-mc-clubhouse.map" dimension="0"></map>
+	<map src="public/Ext-BoatSalesDock/BoatDockOG.map" dimension="0"></map>
+	<map src="public/Ext-IrishBarLittleMoscow/ext-bar.map" dimension="0"></map>
+	<map src="public/Ext-IGS/igs.map" dimension="0"></map>
+	<map src="public/Ext-govcameras/rp-camprojectFINAL.map" dimension="0"></map>
+	<script src="public/busstops.lua" type="server" />
+	<map src="public/Ext-WillowfieldFences/wf_fences.map" />
+	<map src="public/drag-map222.map" />
+	<map src="public/Ext-CityHall/222cityha00.map" dimension="0"/>
+	<!-- Military base and facilities in Bone County -->
+		<!-- <map src="public/military.map" dimension="0"></map> AWAITING CONSTRUCTION -->
+
+<!-- SPECIAL INTERIORS -->
+	<map src="interior/Int-UnitySewers\Sewers.map" dimension="655"></map>
+
+<!-- FACTION MAPS -->
+	<!-- FAA -->
+		<!-- LSIA -->
+			<map src="faction/LSIA/ext_lsia_exciter.map" dimension="0"></map>
+		<!-- Control towers -->
+			<script src="faction/LSIA/atctowerinteriors.lua" type="client" />
+		<!-- Airport interior -->
+			<map src="faction/LSIA/int_LSA_1.map" dimension="1317"></map>
+			<map src="faction/LSIA/int_LSA_2.map" dimension="2337"></map>
+			<map src="faction/LSIA/int_LSA_term2.map" dimension="2340"></map>
+	<!-- SACMA -->
+		<map src="faction/SACMA/SACMA.map" dimension="0"></map>
+		<script src="faction/SACMA/removeWorldObj.lua" type="client" />
+	<!-- Prison -->
+		<map src="faction/prison/prison.map" dimension="0"></map>
+	<!-- SASD -->
+		<map src="faction/SASD/PD-SD-Training-Grounds.map" dimension="0"></map>	
+		<map src="faction/SASD/sahp-nogate.map" dimension="0"></map>	
+		<map src="faction/SASD/SAHP-NoGates.map" dimension="0"></map>
+		<map src="faction/SASD/pd-training-ground-ranch/pd-training-ground-ranch.map" dimension="0"></map>		
+		<map src="faction/SASD/montgomery-precinct-Ext.map" dimension="0"></map>		
+	<!-- Al-Najjar -->
+		<!-- <map src="faction/Al-Najjar/Bashasexterior.map" dimension="0"></map> -->
+	<!-- LSN -->
+		<map src="faction/LSN/notrespasser.map" dimension="0"></map>
+		<map src="faction/LSN/StarTower_TopFloor.map" dimension="0"></map>
+		<map src="faction/LSN/Int-LSN.map" dimension="6"></map>
+	<!-- LSFD -->
+		<map src="faction/FD/FD.map" dimension="0"></map>
+		<map src="faction/FD/FDparking.map" dimension="0"></map>
+		<map src="faction/FD/CompleteHospitalInt.map" dimension="180"></map>
+	<!-- LSPD -->
+		<map src="faction/LSPD/LSPD-exterior.map" dimension="0"></map>
+		<map src="faction/LSPD/detective.map" dimension="0"></map>
+		<map src="faction/LSPD/lscsd.map" dimension="10"></map>
+		<script src="faction/LSPD/s_lscsd.lua" type="server" />
+		<map src="faction/LSPD/lspdinterior.map" dimension="10"></map>
+		<script src="faction/LSPD/s_lspd.lua" type="server" />
+	<!-- Towing -->
+		<script src="faction/towing/s_remove.lua" type="server" />
+		<map src="faction/towing/RT_3_withoutgates.map" dimension="0"></map>
+	<!-- Reaper Crew (Reaper's MC) -->
+		<!-- <map src="faction/ReaperCrew/ReapersMC.map" dimension="0"></map> -->
+	<!-- SAPT (San Andreas Public Transportation) -->
+		<map src="faction/SAPT/SAPTReadyOwlMap.map" dimension="0"></map>
+	<!-- Montalvo Connection -->
+		<map src="faction/MontalvoConnection/cartelisland2.map" dimension="0"></map>
+	<!-- Government of Los Santos -->
+		<map src="faction/gov/int_CityHall.map" dimension="2695"></map>
+		
+<!-- EVENT MAPS (limited time) -->
+	<!--<map src="events/santamaria.map" dimension="0"></map>-->
+	<!--<map src="events/icedPonds.map" dimension="0"></map>-->
+	<!-- LQC Construction projects -->
+		<map src="events/IdlewoodDemolishion.map" dimension="0"></map>
+
+<!-- SECONDARY: EXTERNAL ISLANDS, ETC. -->
+	<map src="secondary/Ext-DonutDriftingMap/Ext-DonutDriftingMap.map" dimension="0"></map>
+	<map src="secondary/tortuguilla/tortuguilla.map" dimension="0"></map>
+
+<!-- SECONDARY: PERSONAL MAPS -->
+	<!-- einschtein -->
+		<!-- Le Chateau, Vinewood -->
+			<map src="personal/einschtein/HotelParking.map" dimension="0"></map>
+	<!-- dfajoe -->
+		<map src="personal/dfajoe/farm-map-adams.map"/>
+	<!-- Uzi -->
+		<!-- Rodeo map for some casino by uzi -->
+		<map src="personal/Uzi/Ext-RodeoCasino.map"/>
+	<!-- saku446 -->
+		<map src="personal/saku446/Ext_1PasadenaBlvd.map"/>
+	<!--  jonthulhu -->
+		<map src="personal/jonthulhu/thefamilySHACK.map" dimension="0"></map>
+	<!-- LukeCorleon -->	
+		<!-- Farm in Flint County. Elizabeth Starks. Position: -415.4580078125, -1738.009765625, 7.9929904937744. http://forums.owlgaming.net/showthread.php?29696-Elizabeth-Starks-Map-Addition -->	
+			<map src="personal/LukeCorleon/flintcounty_farm.map" dimension="0"></map>
+		<!-- LQC Construction HQ in Blueberry. Elizabeth Starks. http://142.4.218.194/showthread.php?31073-LukeCorleon-Map-Addition -->	
+			<!-- <map src="personal/LukeCorleon/LukeCorleon_LQC.map" dimension="0"></map> AWAITING CONSTRUCTION -->
+	<!-- Snipes -->
+		<map src="personal/Snipes/house.map" dimension="0"></map>
+	<!-- Crowex -->
+		<map src="personal/Crowex/House-annoying-garage-removal.map" dimension="0"></map>
+		<!-- Mansion at the coast east of Palomino Creek. Leah Ghalichi. http://142.4.218.194/showthread.php?30081-Crowex-Map-Addition -->
+			<map src="personal/Crowex/Crowex_RedCountyMansion.map" dimension="0"></map>
+	<!-- BrukONE -->
+		<map src="personal/BrukONE/BrukONE-BlueberryFences.map" dimension="0"></map>
+		<map src="personal/BrukONE/5_province_st_garage.map"/>
+	<!-- Exciter -->
+		<!-- Blueberry Factory. Jacob Goldsmith. http://142.4.218.194/showthread.php?29686-q_666%29-Map-Addition -->
+			<map src="personal/Exciter/bbhq.map"/>
+	<!-- GamingWithPotato -->
+		<!-- Farm just north-west of Palomino Creek. Marko Vidovic. http://142.4.218.194/showthread.php?29914-GamingWithPotato-Map-Addition -->
+			<!--<map src="personal/GamingWithPotato/GamingWithPotato_PalominoCreekFarm.map" dimension="0"></map> AWAITING CONSTRUCTION -->
+	<!-- Morris7878 -->
+		<!-- Mansion at Panopticon Hill, just west of Blueberry. Veronica Lancaster. http://142.4.218.194/showthread.php?30090-Morris7878-Map-Addition -->
+			<!--<map src="personal/Morris7878/Morris7878_PanopticonHillMansion.map" dimension="0"></map> AWAITING CONSTRUCTION -->
+	<!-- sloth -->
+		<!-- Flint County Hilltop Farm. Michael Haldane. http://forums.owlgaming.net/showthread.php?30092-Sloth-Map-Addition -->
+			<map src="personal/sloth/sloth_FlintCountyHilltopFarm.map" dimension="0"></map>
+	<!-- point45 -->
+		<!-- Palomino Creek, corner of Crest and Clean street. Construction Added. Pos: 2546.8056640625 -3.1845703125 26.553979873657. Nathan Sutts. http://142.4.218.194/showthread.php?30713-point45-Map-Addition -->
+			<map src="personal/point45/point45_PalominoCreek.map" dimension="0"></map>
+			<map src="personal/point45/palomino-emptyplot-point45.map" dimension="0"></map>
+	<!-- Edwards -->
+		<!-- Small farm in Flint County, on the hill just west of RS Haul. Position: -367.25 -1049.1982421875 59.33634185791 -->
+			<!-- <map src="personal/Edwards/Edwards_FlintCountyFarm.map" dimension="0"></map> AWAITING CONSTRUCTION -->
+	<!-- Pogis -->
+		<!-- Tiny farm at Beacon Hill, Flint County, near RS Haul. Cletus Williams. http://142.4.218.194/showthread.php?31068-Cletus-Williams-Map-Addition  -->
+			<!-- <map src="personal/Pogis/Pogis_BeaconHillFarm.map" dimension="0"></map> AWAITING CONSTRUCTION -->
+		<!-- Object removals at a house in Palomino Creek (21 Clean Street). Sarah Cambridge . http://forums.owlgaming.net/showthread.php?31939-Sarah-Cambridge-Map-Addition  -->
+			<map src="personal/Pogis/Pogis_PalominoCreek21CleanStreet.map" dimension="0"></map>
+
+<min_mta_version client="1.3.0-9.03783"></min_mta_version>
+</meta>
